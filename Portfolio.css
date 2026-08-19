@@ -91,3 +91,42 @@
         background-color: #BBDC12;
         right: 0;
       }
+
+      .aboutcont{
+        height: 90vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .cont1{
+        height: 40vh;
+        width: 40vw;
+        /* background-color: blue; */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        color: white;
+      }
+
+      .cont1 > :first-child{
+        font-size: 7vh;
+        font-weight: 600;
+      }
+
+      .cont1 > :nth-child(2){
+        font-size: 8vh;
+        font-weight: 400;
+      }
+
+       .logos{
+        height: 5vh;
+        width: 40%;
+        display: flex;
+        justify-content: space-around;
+       }
+      .logos i{
+        font-weight: lighter;
+      }
