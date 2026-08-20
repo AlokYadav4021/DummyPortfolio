@@ -1,132 +1,388 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
 }
 
-.main{
-    height: 600vh;
-    width: 100%;
+.main {
+  height: 600vh;
+  width: 100%;
 }
 
-.landing{
-    height: 100vh;
-    width: 100%;
-    background-image:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+.landing {
+  height: 100vh;
+  width: 100%;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url("./manmountain.jpg");
-    background-size: 100% 100vh;
+  background-size: 100% 100vh;
 }
 
-.nav{
-    height: 10vh;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: white;
+.nav {
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
 }
 
-.nav h2{
-    margin: 0 0 0 3vw;
+.nav h2 {
+  margin: 0 0 0 3vw;
 }
-
 
 .nav ul {
-    height: 10vh;
-    width: 50%;
-    margin: 0 3vw 0 0;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-
+  height: 10vh;
+  width: 50%;
+  margin: 0 3vw 0 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
-.nav ul li{
-    list-style: none;
-} 
-
-.nav ul li a{
-    text-decoration: none;
-    color: white;
-    position: relative;
-    
+.nav ul li {
+  list-style: none;
 }
 
-.nav ul li a:hover{
-    font-weight: bold;
+.nav ul li a {
+  text-decoration: none;
+  color: white;
+  position: relative;
 }
 
-.nav ul li a::before{
-    content: "";
-    height: 3px;
-    width: 0px;
-    background-color: #BBDC12;
-    display: block;
-    transition: all .4s linear;
-    position: absolute;
-    top: -5px;
+.nav ul li a:hover {
+  font-weight: bold;
 }
 
-.nav ul li a:hover::before{
-    width: 45px;
+.nav ul li a::before {
+  content: "";
+  height: 3px;
+  width: 0px;
+  background-color: #bbdc12;
+  display: block;
+  transition: all 0.4s linear;
+  position: absolute;
+  top: -5px;
+}
+
+.nav ul li a:hover::before {
+  width: 45px;
 }
 
 .nav ul li a::after {
-        content: "";
-        height: 3px;
-        width: 0px;
-        background-color: #BBDC12;
-        display: block;
-        transition: all .4s linear;
-        position: absolute;
-        bottom: -5;
-        right: 50%;
-      }
+  content: "";
+  height: 3px;
+  width: 0px;
+  background-color: #bbdc12;
+  display: block;
+  transition: all 0.4s linear;
+  position: absolute;
+  bottom: -5;
+  right: 50%;
+}
 
-       .nav ul li a:hover::after {
-        content: "";
-        height: 3px;
-        width:45px;
-        background-color: #BBDC12;
-        right: 0;
-      }
+.nav ul li a:hover::after {
+  content: "";
+  height: 3px;
+  width: 45px;
+  background-color: #bbdc12;
+  right: 0;
+}
 
-      .aboutcont{
-        height: 90vh;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
+.aboutcont {
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-      .cont1{
-        height: 40vh;
-        width: 40vw;
-        /* background-color: blue; */
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        color: white;
-      }
+.cont1 {
+  height: 40vh;
+  width: 40vw;
+  /* background-color: blue; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+}
 
-      .cont1 > :first-child{
-        font-size: 7vh;
-        font-weight: 600;
-      }
+.cont1 > :first-child {
+  font-size: 7vh;
+  font-weight: 600;
+}
 
-      .cont1 > :nth-child(2){
-        font-size: 8vh;
-        font-weight: 400;
-      }
+.cont1 > :nth-child(2) {
+  font-size: 8vh;
+  font-weight: 400;
+}
 
-       .logos{
-        height: 5vh;
-        width: 40%;
-        display: flex;
-        justify-content: space-around;
-       }
-      .logos i{
-        font-weight: lighter;
-      }
+.logos {
+  height: 5vh;
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+}
+.logos i {
+  font-weight: lighter;
+}
+
+.scroll1 {
+  height: 100vh;
+  width: 100%;
+  background-color: rgb(236, 235, 235);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.skill {
+  height: 62vh;
+  width: 80vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.skill img {
+  height: 60vh;
+  width: 30vw;
+  object-fit: contain;
+}
+
+.skill .aboutme {
+  height: 60vh;
+  width: 40vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.aboutme .aboutmehead > h2 {
+  font-size: 6vh;
+  font-weight: 700;
+}
+
+.aboutme .aboutmehead > h5 {
+  /* font-size: 5vh; */
+  font-weight: 400;
+}
+
+.aboutme > p {
+  font-size: 2vh;
+  font-weight: 300;
+  line-height: 2.5vh;
+}
+.aboutme .prog1 {
+  height: 2.7vh;
+  width: 40vw;
+  font-size: small;
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+ box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+ 
+}
+
+.aboutme .prog1 p {
+  color: black;
+  margin: 0 0 0 2vh;
+}
+
+.aboutme .prog1 p:hover {
+  color: rgb(255, 255, 255);
+}
+
+.aboutme .prog1::before {
+  content: "";
+  height: 2.5vh;
+  width: 0vw;
+  position: absolute;
+  display: block;
+  z-index: -1;
+  transition: all 0.8s linear;
+}
+
+.aboutme .prog1:hover::before {
+  content: "";
+  height: 2.5vh;
+  width: 35vw;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: black;
+}
+
+.aboutme .prog2 {
+  height: 2.7vh;
+  width: 40vw;
+  font-size: small;
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.aboutme .prog2 p {
+  color: black;
+  margin: 0 0 0 2vh;
+}
+
+.aboutme .prog2 p:hover {
+  color: rgb(255, 255, 255);
+}
+
+.aboutme .prog2::before {
+  content: "";
+  height: 2.5vh;
+  width: 0vw;
+  position: absolute;
+  display: block;
+  z-index: -1;
+  transition: all 0.8s linear;
+}
+
+.aboutme .prog2:hover::before {
+  content: "";
+  height: 2.5vh;
+  width: 32vw;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: black;
+}
+
+.aboutme .prog3 {
+  height: 2.7vh;
+  width: 40vw;
+  font-size: small;
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+ box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.aboutme .prog3 p {
+  color: black;
+  margin: 0 0 0 2vh;
+}
+
+.aboutme .prog3 p:hover {
+  color: rgb(255, 255, 255);
+}
+
+.aboutme .prog3::before {
+  content: "";
+  height: 2.5vh;
+  width: 0vw;
+  position: absolute;
+  display: block;
+  z-index: -1;
+  transition: all 0.8s linear;
+}
+
+.aboutme .prog3:hover::before {
+  content: "";
+  height: 2.5vh;
+  width: 34vw;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: black;
+}
+
+.skill .buttons {
+  height: 5vh;
+  width: 25vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.buttons button:first-child {
+  height: 5vh;
+  width: 10vw;
+  color: black;
+  font-weight: 700;
+  background-color: transparent;
+  border: 1px solid black;
+  border-radius: 3px;
+  transition: all .3s linear;
+}
+
+.buttons button:first-child:hover {
+  background-color: black;
+  color: white;
+}
+.buttons button:last-child {
+  height: 5vh;
+  width: 10vw;
+  color: black;
+  font-weight: 700;
+  background-color: transparent;
+  border: 1px solid black;
+  border-radius: 3px;
+  transition: all .3s linear;
+
+}
+
+.buttons button:last-child:hover {
+  background-color: black;
+  color: white;
+}
+
+.scroll2{
+    height: 95vh;
+    width: 100%;
+    background-color: cyan;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.scroll2cont{
+    height: 80vh;
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.cards{
+    height: 73vh;
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.cards1 {
+    height: 35vh;
+    width: 80vw;
+    background-color: black;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cards1 .line1caerd{
+    height: 35vh;
+    width: 25vw;
+    background-color: grey;
+}
+.cards2 {
+    height: 35vh;
+    width: 80vw;
+    background-color: black;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.cards2 .line2caerd{
+    height: 35vh;
+    width: 25vw;
+    background-color: grey;
+}
+
